@@ -1,0 +1,21 @@
+{
+  "name": "alt18",
+  "version": "0.0.1",
+  "description": "A simple node.js parser for the Alt18 countdown",
+  "main": "alt18.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pspeter3/alt18.git"
+  },
+  "author": "Phips Peter",
+  "license": "BSD",
+  "dependencies": {
+    "scraper": "0.0.9"
+  },
+  "devDependencies": {
+    "vows": "~0.6.4"
+  }
+}

@@ -9,8 +9,14 @@ vows.describe('Alt18').addBatch({
     'should hanlde an empty line': function() {
       assert.equal(alt18.parseLine(''), null);
     },
-    'should handle an a valid line': function() {
+    'should handle a valid line': function() {
       var data = alt18.parseLine('18. The Neighbourhood - "Female Robbery"');
+      assert.equal(data.rank, 18);
+      assert.equal(data.artist, 'The Neighbourhood');
+      assert.equal(data.track, 'Female Robbery');
+    },
+    'should handle a line with extra spaces': function() {
+      var data = alt18.parseLine(' 18.  The Neighbourhood  -  "Female Robbery" ');
       assert.equal(data.rank, 18);
       assert.equal(data.artist, 'The Neighbourhood');
       assert.equal(data.track, 'Female Robbery');

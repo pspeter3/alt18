@@ -11,6 +11,7 @@ Installation
 Usage
 -----
 
+    ```javascript
     var alt18 = require('alt18');
     alt18.fetch(function(err, date, tracks) {
       if (err) {
@@ -18,3 +19,4 @@ Usage
       }
       console.log(date, tracks);
     });
+    ```

@@ -21,5 +21,5 @@ vows.describe('Alt18').addBatch({
       assert.equal(data.artist, 'The Neighbourhood');
       assert.equal(data.track, 'Female Robbery');
     }
-  }
+  },
 }).run();
